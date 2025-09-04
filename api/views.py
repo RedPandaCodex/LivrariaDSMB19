@@ -5,7 +5,11 @@ from .serializers import AutorSerializer, EditoraSerializer, LivroSerializer
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.permissions import IsAuthenticated
+
+#Filters
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.filters import SearchFilter
 
 ################################################
 
@@ -13,6 +17,9 @@ class AutoresView(ListCreateAPIView):
     queryset = Autor.objects.all()
     serializer_class = AutorSerializer
     permission_classes = [IsAuthenticated]
+    filter_backends = [DjangoFilterBackend, SearchFilter]
+    filter_fields = ['id'] #permite o filtro exato
+    search_filter = ['autor'] #habilita a busca total por strings
 
 class AutoresDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Autor.objects.all()
