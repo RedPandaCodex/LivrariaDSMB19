@@ -1,4 +1,4 @@
-﻿titulo,subtitulo,autor,editora,isbn,descricao,idioma,ano_publicacao,paginas,preco,estoque,desconto,disponivel,dimensoes,peso
+﻿titulo,subtitulo,autor,editora,isbn,descricao,idioma,ano,paginas,preco,estoque,desconto,disponivel,dimensoes,peso
 Dom Casmurro,Romance realista sobre dúvida e ciúme,Joaquim Maria Machado de Assis,Companhia das Letras,9781000000009,Romance realista sobre dúvida e ciúme — edição em capa comum.,Português,1899,288,72.86,8,10.00,True,21x14x3.3 cm,721.36
 "Gabriela, Cravo e Canela",Amor e modernização em Ilhéus,Jorge Amado,Companhia das Letras,9781000000009,Amor e modernização em Ilhéus — edição em capa comum.,Português,1958,368,91.81,16,20.00,False,20x13x1.5 cm,366.13
 A Hora da Estrela,A vida de Macabéa no Rio de Janeiro,Clarice Lispector,Rocco,9781000000009,A vida de Macabéa no Rio de Janeiro — edição em capa comum.,Português,1977,96,70.05,76,5.00,False,23x14x2.8 cm,827.54
