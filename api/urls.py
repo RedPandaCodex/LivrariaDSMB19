@@ -10,13 +10,13 @@ urlpatterns = [
 
     ###### GET = POST ######
     path('autores', AutoresView.as_view()),
-    path('editors', EditoraView.as_view()),
-    path('books', LivroView.as_view()),
+    path('editors', EditorasView.as_view()),
+    path('books', LivrosView.as_view()),
 
     ###### UPDATE = DELETE ######
     path('autor/<int:pk>', AutoresDetailView.as_view()),
-    path('editor/<int:pk>', EditoraDetailView.as_view()),  
-    path('book/<int:pk>', LivroDetailView.as_view()),
+    path('editor/<int:pk>', EditorasDetailView.as_view()),  
+    path('book/<int:pk>', LivrosDetailView.as_view()),
 
     ###### AUTENTICAÇÃO ######
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
