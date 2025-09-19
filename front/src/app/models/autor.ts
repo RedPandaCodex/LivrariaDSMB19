@@ -1,8 +1,8 @@
-export interface Autor{
-    id: number;
-    autor: string;
-    surname: string;
-    birthdate?: string | null;
-    nationality?: string | null;
-    bio?: string | null;
+export interface Autor {
+  id: number;
+  nome: string;
+  sobrenome: string;
+  data_nascimento?: string | null;
+  nacionalidade?: string | null;
+  biografia?: string | null;
 }
